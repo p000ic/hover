@@ -30,4 +30,9 @@ var LinuxSnapTask = &packagingTask{
 	requiredTools: map[string][]string{
 		"linux": {"snapcraft"},
 	},
+	toolsInstallationInstruction: map[string]map[string]string{
+		"linux": {
+			"snapcraft": "Install snapd from your package manager or from https://snapcraft.io/docs/installing-snapd",
+		},
+	},
 }

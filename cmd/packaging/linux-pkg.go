@@ -37,4 +37,9 @@ var LinuxPkgTask = &packagingTask{
 	requiredTools: map[string][]string{
 		"linux": {"makepkg"},
 	},
+	toolsInstallationInstruction: map[string]map[string]string{
+		"linux": {
+			"makepkg": "You need to be on Arch Linux or another distro that uses pacman as package manager to use this. Installing makepkg on other distros is hard and dangerous.",
+		},
+	},
 }

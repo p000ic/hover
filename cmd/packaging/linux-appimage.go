@@ -64,4 +64,9 @@ var LinuxAppImageTask = &packagingTask{
 	requiredTools: map[string][]string{
 		"linux": {"appimagetool"},
 	},
+	toolsInstallationInstruction: map[string]map[string]string{
+		"linux": {
+			"appimagetool": "Install appimagetool from your package manager or from https://github.com/AppImage/AppImageKit#appimagetool-usage",
+		},
+	},
 }

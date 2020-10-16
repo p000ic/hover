@@ -119,4 +119,12 @@ var DarwinPkgTask = &packagingTask{
 		"linux":  {"find", "cpio", "gzip", "mkbom", "xar"},
 		"darwin": {"find", "cpio", "gzip", "mkbom", "xar"},
 	},
+	toolsInstallationInstruction: map[string]map[string]string{
+		"linux": {
+			"cpio":  "Install cpio from your package manager",
+			"gzip":  "Install gzip from your package manager",
+			"mkbom": "Install bomutils from your package manager or from https://github.com/hogliux/bomutils",
+			"xar":   "Install xar from your package manager or from https://github.com/mackyle/xar",
+		},
+	},
 }
